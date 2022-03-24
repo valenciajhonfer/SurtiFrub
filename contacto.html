@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/contacto.css">
+        <title>Formulario de Pago</title>
+    </head>
+    <body>
+    <header class="header">
+            <!-- Incluir logo, tarea pendiente -->
+            <!-- <a href="./compras.html">Página de compras</a> -->
+            <nav class="nav1">
+                <h1><img src="./img/images (9).jfif"></h1>
+                <a href="" class="logo">PrecioJusto</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link" class=nav-link>Home</a></li>
+                    <li class="nav-menu-item"><a href="./productos.html" class="nav-menu-link" class=nav-link>Productos</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link" class=nav-link class=menuactive>Pagar</a></li>
+                </ul>
+            </nav>
+    </header>
+        <br><br><br>
+        <div class="card">
+            <h5 class="card-header">Formulario de Pago</h5>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    <i class="fas fa-exclamation-circle"></i> Ingrese datos validos
+                    </div>
+                <form id="miFormulario">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="inputCard">Número de Tarjeta</label>
+                            <input type="number" class="form-control"  id="inputCard" 
+                            placeholder="XXXXXXXXXXX" name="card">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCVC">CVV</label>
+                            <input type="number" class="form-control" id="inputCVC" placeholder="000" 
+                             name= "cvc">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputAmount">Monto</label>
+                            <input type="number" class="form-control" id="inputAmount" 
+                            placeholder="Ingrese un monto" name="monto">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="form-group col-md">
+                                <label for="inputName">Nombre</label>
+                                <input type="text" class="form-control" id="inputName" maxlength="15" placeholder=""
+                                name="nombre">
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="inputLastname">Apellido</label>
+                                <input type="text" class="form-control" id="inputLastname" maxlength="15" placeholder=""
+                                name="apellido">
+                            </div>
+                        </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity" maxlength="15" name="ciudad">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputState">Estado</label>
+                            <select id="inputState" class="form-control" name="estado">
+                                <option value="" selected>Seleccione un estado...</option>
+                                <option value="california">California</option>
+                                <option value="florida">Florida</option>
+                                <option value="nevada">Nevada</option>
+                                <option value="otro">Otro Estado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputZip">Código Postal</label>
+                            <input type="text" class="form-control" id="inputZip" maxlength="10" 
+                            name="codigoPostal">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label class="tarjetas" for="">Aceptamos:</label>
+                            <div class="form-control seleccionTarjeta">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio1" value="mc">
+                                <label class="form-check-label" for="inlineRadio1">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio2" value="visa">
+                                <label class="form-check-label" for="inlineRadio2">
+                                    <i class="fab fa-cc-visa"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio3" value="dinersClub">
+                                <label class="form-check-label" for="inlineRadio3">
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio4" value="americanExpress">
+                                <label class="form-check-label" for="inlineRadio4">
+                                    <i class="fab fa-cc-amex"></i>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3">    
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleFormControlTextarea1">Comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">   
+                            </textarea>
+                            <small id="comentarioHelpBlock" class="form-text text-muted">
+                            Ingrese algún comentario
+                            </small>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            <button class="btn btn-secondary" id="botonLimpiar">Reintentar</button>
+            </div>
+        </div>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="imagenes/th (25).jpg" alt="ComputerNice">
+                        </a>
+                    </figure>
+                </div>
+                <div class="boxSobre">
+                    <h2 class='sobrenosotrosPtitle'>SOBRE NOSOTROS</h2>
+                    <div class="sobreNosotros">
+                        <p class="sobrenosotrosP">Somos estudiates del Front-end 9 de</p>
+                    </div>
+                    <p class="academiaG">ACADEMIA GEEK</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>PC Express</b> - Todos los Derechos Reservados.</small>
+            </div>
+    
+        </footer>
+  </body>
+ <script src="./script/pago.js"></script>
+</html>
